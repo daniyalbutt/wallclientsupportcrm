@@ -81,7 +81,7 @@ class LoginController extends Controller
             
             else{
                 Session::put('valid_user', true);
-                $ip_address_array = ['110.93.227.186', '103.125.71.39', '139.135.57.22','144.126.137.16','103.125.71.60','206.42.123.38'];
+                $ip_address_array = ['110.93.227.186', '103.125.71.39', '139.135.57.22','144.126.137.16','103.125.71.60','206.42.123.38', '202.47.32.185'];
                 $ip_address = $request->ip();
                 Session::put('ip_address', $ip_address);
                 Session::put('login_ip', $ip_address);  
@@ -132,7 +132,7 @@ class LoginController extends Controller
 
 
         // Session::put('valid_user', true);
-        $ip_address_array = ['110.93.227.186', '103.125.71.39', '139.135.57.22','144.126.137.16','103.125.71.60','206.42.123.38'];
+        $ip_address_array = ['110.93.227.186', '103.125.71.39', '139.135.57.22','144.126.137.16','103.125.71.60','206.42.123.38', '202.47.32.185'];
         $ip_address = $request->ip();
         Session::put('ip_address', $ip_address);
         Session::put('login_ip', $ip_address);
